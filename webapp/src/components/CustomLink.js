@@ -1,10 +1,12 @@
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link, HashRouter as Router } from "react-router-dom";
 import "./CustomLink.scss";
 
-function CustomLink({ label, to, color = "white" }) {
+function CustomLink({ label, to }) {
   return (
-    <Router class="link">
-      <Link to={to}>{label}</Link>
+    <Router>
+      <Link to={to} className="link">
+        {label}
+      </Link>
     </Router>
   );
 }
