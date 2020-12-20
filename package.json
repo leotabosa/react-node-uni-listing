@@ -1,0 +1,26 @@
+{
+  "name": "@leotabosa/store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "3.1.9-1",
+    "date-fns": "2.6.0",
+    "knex": "^0.21.12",
+    "lodash": "4.17.11",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.16.0",
+    "eslint-plugin-compat": "3.3.x",
+    "express": "4.16.x",
+    "prettier": "1.16.x"
+  },
+  "engines": {
+    "node": ">=9.5.0",
+    "yarn": ">=1.0.0"
+  }
+}

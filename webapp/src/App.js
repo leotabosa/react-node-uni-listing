@@ -1,16 +1,18 @@
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./views/home/Home";
-import Product from "./views/product/Product";
+import "./App.scss";
+
+import University from "./views/university/University";
 function App() {
   return (
-    <div>
+    <div className="app">
       <Router>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/product">
-            <Product />
+          <Route path="/university">
+            <University />
           </Route>
         </Switch>
       </Router>
