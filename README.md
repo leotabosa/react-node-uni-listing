@@ -14,9 +14,6 @@ cd store
 #    https://yarnpkg.com/lang/en/docs/install
 yarn
 
-# 4. Inicialize os servidores.
-yarn start
-
-cd webapp
+# 4. Inicialize o servidor.
 yarn start
 ```
