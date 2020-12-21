@@ -7,7 +7,7 @@
 git clone https://github.com/leotabosa/react-node-listing.git
 
 # 2. Acesse a pasta do projeto.
-cd store
+cd react-node-listing
 
 # 3. Instale as dependências.
 #    Certifique-se de que o yarn esteja instalado:
