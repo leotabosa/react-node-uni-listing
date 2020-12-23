@@ -13,7 +13,7 @@ class University extends React.Component {
     };
   }
 
-  async loadCourses() {
+  async loadMajors() {
     const id = this.props.match.params.id;
     const university = await api.get(`/universidades/${id}`);
     console.log(university);
@@ -22,7 +22,7 @@ class University extends React.Component {
     this.setState({ university: university.data[0] });
   }
 
-  listCourses() {
+  listMajors() {
     const items = this.state.data.map((item) => {
       return (
         <div className="university__course" key={item.id}>
@@ -37,7 +37,7 @@ class University extends React.Component {
   }
 
   componentDidMount() {
-    this.loadCourses();
+    this.loadMajors();
   }
 
   render() {
@@ -48,10 +48,10 @@ class University extends React.Component {
         </h2>
         <div className="university__list">
           <div class="university__label">Cursos de tecnologia disponíveis</div>
-          <div className="university__courses">
+          <div className="university__majors">
             {this.state.data === null || this.state.university === null
               ? "Carregando"
-              : this.listCourses()}
+              : this.listMajors()}
           </div>
           <div className="university__go-back">
             <CustomLink to="/" label="Voltar" />
