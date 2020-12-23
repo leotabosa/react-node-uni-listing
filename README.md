@@ -12,10 +12,15 @@ git clone https://github.com/leotabosa/react-node-uni-listing.git
 cd react-node-uni-listing
 
 # 3. Install dependecies.
-#    Certifique-se de que o yarn esteja instalado:
+#    Make sure yarn is installed:
 #    https://yarnpkg.com/lang/en/docs/install
 yarn
 
 # 4. Run.
+yarn start
+
+## To run the webapp, in another terminal, run:
+
+cd webapp
 yarn start
 ```
