@@ -18,7 +18,7 @@ yarn
 
 # 4. Create the database file named like your knexfile.js indicates and run migrations.
 #    Run migrations.
-#    knex migrate:latest
+knex migrate:latest
 
 # 4. Run.
 yarn start
