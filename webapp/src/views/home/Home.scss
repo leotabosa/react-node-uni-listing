@@ -5,15 +5,46 @@
   justify-content: center;
   height: 100vh;
 
-  &__list {
+  &__title {
+    margin-bottom: 30px;
+    padding: 2rem;
+    border-radius: 6px;
+    color: var(--cor-texto-primaria);
+    font-size: 24px;
+    background-color: var(--cor-secundaria);
+  }
+  &__gap {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    background-color: var(--cor-secundaria);
     padding: 2rem;
+    grid-gap: 1rem;
+  }
+
+  &__list {
+    max-height: 60vh;
+    overflow: auto;
+    background-color: var(--cor-secundaria);
     border-radius: 8px;
     border: 1px solid var(--cor-borda-primaria);
     box-shadow: 0 3px 6px #00000029;
+
+    a {
+      text-decoration: none;
+    }
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.08);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.1);
+      outline: none;
+      border-radius: 6px;
+    }
 
     &__card {
       display: flex;

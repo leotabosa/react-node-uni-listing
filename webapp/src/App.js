@@ -11,9 +11,10 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/university">
-            <University />
-          </Route>
+          <Route
+            path="/university/:id"
+            render={(props) => <University {...props} />}
+          />
         </Switch>
       </Router>
     </div>

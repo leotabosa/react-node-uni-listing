@@ -1,7 +1,76 @@
 .university {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-color: black;
   height: 100vh;
+
+  &__title {
+    margin-bottom: 30px;
+    padding: 2rem;
+    border-radius: 6px;
+    color: var(--cor-texto-primaria);
+    font-size: 24px;
+    font-weight: normal;
+    background-color: var(--cor-secundaria);
+  }
+
+  &__list {
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda-primaria);
+    box-shadow: 0 3px 6px #00000029;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  &__label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 18px;
+    color: var(--cor-texto-primaria);
+  }
+
+  &__courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    max-height: 60vh;
+    overflow: auto;
+    padding: 0 0 2rem;
+  }
+
+  &__course {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    border-radius: 4px;
+    color: var(--cor-texto-secundaria);
+    border: 1px solid var(--cor-borda-primaria);
+    transition: all 0.2s ease;
+  }
+
+  &__go-back {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 0.5rem 4rem;
+      border-radius: 5px;
+      color: var(--cor-fundo-secundaria);
+      border: 1px solid var(--cor-fundo-secundaria);
+      background-color: white;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: var(--cor-fundo-secundaria);
+        color: white;
+        transition: all 0.2s ease;
+      }
+    }
+  }
 }

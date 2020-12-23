@@ -1,9 +1,10 @@
 .app {
+  box-sizing: border-box;
   background: linear-gradient(
     to right,
-    rgba(240, 101, 67, 1) 0%,
-    rgba(240, 101, 67, 1) 50%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(1, 4, 0, 1) 0%,
+    rgba(1, 4, 0, 1) 50%,
+    rgba(44, 42, 74, 1) 50%,
+    rgba(44, 42, 74, 1) 100%
   );
 }
