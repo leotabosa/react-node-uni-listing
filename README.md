@@ -1,6 +1,6 @@
 # react-node-uni-listing
 
-### This application is a study prototype. It simply uses Node.js and React to list some of the most well-known tech majors in Fortaleza/CE - Brasil.
+This application is a study prototype. It simply uses Node.js and React to list some of the most well-known tech majors in Fortaleza/CE - Brasil.
 
 ## First steps
 
